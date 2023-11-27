@@ -1,0 +1,155 @@
+.brands{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.brand-img img{
+    width: 170px;
+}
+
+
+
+.contact h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    font-size: 35px;
+    font-weight:6500;
+    letter-spacing: 0.6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact h1 span{
+    color: #e7decf;
+}
+
+.contact-flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0px 8%;
+}
+
+
+form{
+    border: 1px solid #ccc;
+    padding: 2rem;
+    box-shadow: #f9f9f9;
+    border-radius: 0.5rem;
+}
+form h2{
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+    color: #000;
+    text-transform: capitalize;
+    color: #e7decf;
+}
+
+form .input-box input, textarea{
+    padding: 1rem 1.2rem;
+    border: 1px solid #1a1a1a;
+    border-radius: 0.5rem;
+    color: #000;
+    margin: 0.5rem 0;
+    width: 100%;
+    outline: none;
+}
+
+form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.msg-button{
+    padding: 10px 35px;
+    border: none;
+    border: 1px solid #f0e4d1;
+    border-radius: 20px;
+    background-color: #fff;
+    text-transform: capitalize;
+    color: #ceb895;
+    box-shadow: 0px 0px 4px #ceb895;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.msg-button:hover{
+    box-shadow: 0;
+    color: #fff;
+    background-color: #ceb895;
+}
+
+
+
+.store-text{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 1.5rem;
+    margin-top: 50px;
+    padding: 10px 8%;
+}
+
+.store-img img{
+    width: 100px;
+}
+
+.store-img p{
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #a4916d;
+}
+
+.store-cont h3{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.store-cont a{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    color: #a4916d;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: 0.3s ease-in;
+}
+
+.store-cont a:hover{
+    color: #ceb895;
+    transform: translateY(-2px);
+}
+
+
+
+@media screen and (max-width: 480px){
+    .contact-flex {
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+        padding: 0px 5%;
+    }
+
+    .brands {
+        grid-template-columns: repeat(5,1fr);
+        padding: 10px 2%;
+    }
+
+    .contact h1 {
+        font-size: 25px;
+    }
+
+    form h2 {
+        font-size: 1.3rem;
+    }
+}

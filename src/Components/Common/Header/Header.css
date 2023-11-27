@@ -1,0 +1,149 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    position: sticky;
+    z-index: 100;
+    background-color: #eae6e3;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 0px 3px #ccc;
+}
+
+.container .logo img{
+    width: 120px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* width: 100%;
+    margin-left: 50px; */
+}
+
+
+.navbar li a{
+    font-size: 16px;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.navbar li a.active,
+.navbar li a:hover{
+    background-color: #c0b5a2;
+    color: #fff;
+    border-radius: 6px;
+}
+
+
+
+.context{
+    background: url(/src/Images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.context-text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 5%;
+}
+
+.context-text .vary h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+
+.context-text .vary h1 span{
+    color: #df6951;
+    font-style: italic;
+}
+
+.context-text .vary p{
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.context-text .vary a{
+    color: #c0b5a2;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 20px;
+    padding: 10px 40px;
+    border: 1px solid #c0b5a2;
+    transition: 0.3s ease;
+}
+
+.context-text .vary a:hover,
+.context-text .vary a:active{
+    color: #fff;
+    background-color: #c0b5a2;
+}
+
+
+@media screen and (max-width: 480px){
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ccc;
+        height: 100vh;
+        flex-direction: column;
+        text-align: left;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 999;
+    }
+
+
+    .navbar li{
+        width: 100%;
+        padding: 0px 2%;
+    }
+
+    .navbar li a{
+        display: block;
+        padding: 10px 20px;
+        transition: 0.4s ease;
+        text-align: center;
+    }
+
+    .navbar li a:hover{
+        background-color: #1a1a1a;
+        color: #c0b5a2;
+    }
+
+
+    .context-text{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .context-text .vary h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    
+    
+}
